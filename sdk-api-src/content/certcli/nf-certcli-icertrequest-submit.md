@@ -78,7 +78,7 @@ Specifies the request format, type of request, and whether the request is encryp
 </tr>
 <tr>
 <td width="40%"><a id="CR_IN_BASE64"></a><a id="cr_in_base64"></a><dl>
-<dt><b>CR_IN_BASE64</b></dt>
+<dt><b>CR_IN_BASE64</b><br/>0x01</dt>
 </dl>
 </td>
 <td width="60%">
@@ -88,7 +88,7 @@ Unicode BASE64 format without begin/end.
 </tr>
 <tr>
 <td width="40%"><a id="CR_IN_BASE64HEADER"></a><a id="cr_in_base64header"></a><dl>
-<dt><b>CR_IN_BASE64HEADER</b></dt>
+<dt><b>CR_IN_BASE64HEADER</b><br/>0x00</dt>
 </dl>
 </td>
 <td width="60%">
@@ -98,7 +98,7 @@ Unicode BASE64 format with begin/end.
 </tr>
 <tr>
 <td width="40%"><a id="CR_IN_BINARY"></a><a id="cr_in_binary"></a><dl>
-<dt><b>CR_IN_BINARY</b></dt>
+<dt><b>CR_IN_BINARY</b><br/>0x02</dt>
 </dl>
 </td>
 <td width="60%">
@@ -108,7 +108,7 @@ Binary format.
 </tr>
 <tr>
 <td width="40%"><a id="CR_IN_ENCODEANY"></a><a id="cr_in_encodeany"></a><dl>
-<dt><b>CR_IN_ENCODEANY</b></dt>
+<dt><b>CR_IN_ENCODEANY</b><br/>0xff</dt>
 </dl>
 </td>
 <td width="60%">
@@ -128,7 +128,7 @@ One of the following format value flags can be used to specify the type of the r
 </tr>
 <tr>
 <td width="40%"><a id="CR_IN_RETURNCHALLENGE"></a><a id="cr_in_returnchallenge"></a><dl>
-<dt><b>CR_IN_RETURNCHALLENGE</b></dt>
+<dt><b>CR_IN_RETURNCHALLENGE</b><br/>0x1000000</dt>
 </dl>
 </td>
 <td width="60%">
@@ -139,7 +139,7 @@ Return a challenge that can be submitted to a CA. The challenge is a <a href="/w
 </tr>
 <tr>
 <td width="40%"><a id="CR_IN_CHALLENGERESPONSE"></a><a id="cr_in_challengeresponse"></a><dl>
-<dt><b>CR_IN_CHALLENGERESPONSE</b></dt>
+<dt><b>CR_IN_CHALLENGERESPONSE</b><br/>0x500</dt>
 </dl>
 </td>
 <td width="60%">
@@ -150,7 +150,7 @@ The call is a response to a challenge. The RequestId must be passed in the <i>st
 </tr>
 <tr>
 <td width="40%"><a id="CR_IN_CMC"></a><a id="cr_in_cmc"></a><dl>
-<dt><b>CR_IN_CMC</b></dt>
+<dt><b>CR_IN_CMC</b><br/>0x400</dt>
 </dl>
 </td>
 <td width="60%">
@@ -160,7 +160,7 @@ A <a href="/windows/desktop/SecGloss/c-gly">Certificate Management over CMS</a> 
 </tr>
 <tr>
 <td width="40%"><a id="CR_IN_FORMATANY"></a><a id="cr_in_formatany"></a><dl>
-<dt><b>CR_IN_FORMATANY</b></dt>
+<dt><b>CR_IN_FORMATANY</b><br/>0x00</dt>
 </dl>
 </td>
 <td width="60%">
@@ -170,7 +170,7 @@ Try all of the CR_IN_CMC, CR_IN_KEYGEN, CR_IN_PKCS7,  or CR_IN_PKCS10 formats.
 </tr>
 <tr>
 <td width="40%"><a id="CR_IN_KEYGEN"></a><a id="cr_in_keygen"></a><dl>
-<dt><b>CR_IN_KEYGEN</b></dt>
+<dt><b>CR_IN_KEYGEN</b><br/>0x200</dt>
 </dl>
 </td>
 <td width="60%">
@@ -180,7 +180,7 @@ Keygen request (Netscape format).
 </tr>
 <tr>
 <td width="40%"><a id="CR_IN_PKCS7"></a><a id="cr_in_pkcs7"></a><dl>
-<dt><b>CR_IN_PKCS7</b></dt>
+<dt><b>CR_IN_PKCS7</b><br/>0x300</dt>
 </dl>
 </td>
 <td width="60%">
@@ -190,7 +190,7 @@ Keygen request (Netscape format).
 </tr>
 <tr>
 <td width="40%"><a id="CR_IN_PKCS10"></a><a id="cr_in_pkcs10"></a><dl>
-<dt><b>CR_IN_PKCS10</b></dt>
+<dt><b>CR_IN_PKCS10</b><br/>0x100</dt>
 </dl>
 </td>
 <td width="60%">
@@ -200,7 +200,7 @@ PKCS #10 request.
 </tr>
 <tr>
 <td width="40%"><a id="CR_IN_RPC"></a><a id="cr_in_rpc"></a><dl>
-<dt><b>CR_IN_RPC</b></dt>
+<dt><b>CR_IN_RPC</b><br/>0x20000</dt>
 </dl>
 </td>
 <td width="60%">
@@ -210,7 +210,7 @@ Transmit the messages using RPC instead of DCOM.
 </tr>
 <tr>
 <td width="40%"><a id="CR_IN_FULLRESPONSE"></a><a id="cr_in_fullresponse"></a><dl>
-<dt><b>CR_IN_FULLRESPONSE</b></dt>
+<dt><b>CR_IN_FULLRESPONSE</b><br/>0x40000</dt>
 </dl>
 </td>
 <td width="60%">
@@ -220,7 +220,7 @@ Return a full CMC response.
 </tr>
 <tr>
 <td width="40%"><a id="CR_IN_CRLS"></a><a id="cr_in_crls"></a><dl>
-<dt><b>CR_IN_CRLS</b></dt>
+<dt><b>CR_IN_CRLS</b><br/>0x80000</dt>
 </dl>
 </td>
 <td width="60%">
@@ -230,7 +230,7 @@ Include the current certificate revocation lists.
 </tr>
 <tr>
 <td width="40%"><a id="CR_IN_MACHINE"></a><a id="cr_in_machine"></a><dl>
-<dt><b>CR_IN_MACHINE</b></dt>
+<dt><b>CR_IN_MACHINE</b><br/>0x100000</dt>
 </dl>
 </td>
 <td width="60%">
@@ -240,7 +240,7 @@ Use the context of the key service computer.
 </tr>
 <tr>
 <td width="40%"><a id="CR_IN_ROBO"></a><a id="cr_in_robo"></a><dl>
-<dt><b>CR_IN_ROBO</b></dt>
+<dt><b>CR_IN_ROBO</b><br/>0x200000</dt>
 </dl>
 </td>
 <td width="60%">
@@ -266,7 +266,7 @@ In addition, the request will succeed only when one of the following conditions 
 </tr>
 <tr>
 <td width="40%"><a id="CR_IN_CLIENTIDNONE"></a><a id="cr_in_clientidnone"></a><dl>
-<dt><b>CR_IN_CLIENTIDNONE</b></dt>
+<dt><b>CR_IN_CLIENTIDNONE</b><br/>0x400000</dt>
 </dl>
 </td>
 <td width="60%">
@@ -278,7 +278,7 @@ Do not include in the request data that identifies the client.
 </tr>
 <tr>
 <td width="40%"><a id="CR_IN_CONNECTONLY"></a><a id="cr_in_connectonly"></a><dl>
-<dt><b>CR_IN_CONNECTONLY</b></dt>
+<dt><b>CR_IN_CONNECTONLY</b><br/>0x800000</dt>
 </dl>
 </td>
 <td width="60%">
